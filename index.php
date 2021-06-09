@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <?php
-
+    $nomejogador = "";
+    if(isset($_POST["nomejogador"])){
+        $nomejogador = $_POST["nomejogador"];
+    }
 ?>
 <html lang="pt-br">
 <head>
@@ -41,8 +44,19 @@
                 <h2 class='text-light'>General</h2>
             </header>
             <br>
-            <h4 class='text-light'> Para iniciar a partida, preencha o campo abaixo.";
+            <h4 class='text-light'> Para iniciar a partida, preencha o campo abaixo. </h4>";
         ?>
+        <form method="post">
+            <p>
+            <br>
+            <div class="form-floating">
+                <input type="text" class="form-control" name="nomejogador" id="nomejogador" value="<?php if(isset($_POST["nomejogador"])){ echo $nomejogador; } ?>"
+                placeholder="nomejogador"><br>
+                <label for="nomejogador">Nome do Jogador</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-danger btn-lg">Rolar os Dados</button><br>
+        </form>
     </div>
     <br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
