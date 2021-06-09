@@ -55,9 +55,14 @@
                 <label for="nomejogador">Nome do Jogador</label>
             </div>
             <br>
-            <button type="submit" class="btn btn-danger btn-lg">Rolar os Dados</button><br>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-danger btn-lg">Rolar os Dados</button>
+            </div>
+            </p>
+            <br>
         </form>
     </div>
+    <br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
     <footer class="footer mt-auto py-3 bg-dark">
