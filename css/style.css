@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(25, 135, 84);
+}
+#body{
+    padding-left: 30em;
+    width: 77%;
+}
+.text-light{
+    font-weight: 200;
+}
