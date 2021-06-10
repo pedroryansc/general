@@ -61,6 +61,28 @@
             </p>
             <br>
         </form>
+        <center>
+            <h4 class="text-light">
+                <?php
+                    if($nomejogador != ""){
+                        $vetorjogador = array();
+                        for($i = 0; $i < 5; $i ++){
+                            $vetorjogador[$i] = rand(1,6);
+                            for($i2 = 1; $i2 <= 6; $i2 ++){
+                                if($vetorjogador[$i] == $i2){
+                                    echo "<img src='img/dados/dado$i2.svg' width='70'> ";
+                                }
+                            }
+                        }
+                        echo "</center>";
+                        $vetorcomputador = array();
+                        for($i = 0; $i < 5; $i ++){
+                            $vetorjogador[$i] = rand(1,6);
+                        }
+
+                    }
+                ?>
+            </h4>
     </div>
     <br><br><br><br><br><br>
     <br><br><br><br><br><br><br>
