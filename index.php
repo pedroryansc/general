@@ -70,14 +70,14 @@
                             $vetorjogador[$i] = rand(1,6);
                             for($i2 = 1; $i2 <= 6; $i2 ++){
                                 if($vetorjogador[$i] == $i2){
-                                    echo "<img src='img/dados/dado$i2.svg' width='70'> ";
+                                    echo "<img src='img/dados/dado$i2.svg' title='$i2' width='70'> ";
                                 }
                             }
                         }
                         echo "</center>";
                         $vetorcomputador = array();
                         for($i = 0; $i < 5; $i ++){
-                            $vetorjogador[$i] = rand(1,6);
+                            $vetorcomputador[$i] = rand(1,6);
                         }
 
                     }
